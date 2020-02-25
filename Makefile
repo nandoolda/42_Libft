@@ -6,7 +6,7 @@ FLAGS = -Wall -Wextra
 
 HEAD = ./include
 
-SRCS = ft_strlen.c main.c
+SRCS = ft_strlen.c ft_strlcpy.c main.c
 
 OBJS = ${SRCS:.c=.o}
 
