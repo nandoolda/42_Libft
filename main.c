@@ -1,14 +1,15 @@
 #include <stdio.h>
 
+void *ft_memset(void *s, int c, unsigned int n);
 unsigned int	ft_strlen(const char *s);
 unsigned int	ft_strlcpy(char *dst, const char *src, unsigned int size);
 
 int	main()
 {
 	const char *s;
-	char	*dst;
+	char	*dst[5];
 
-	dst = "aaaaaaaaaaaaaaa";
+	ft_memset(dst, 0x41, 5);
 	s = "Hello 42!";
-	printf("%d  %s\n", ft_strlcpy(dst, s, 5), dst);
+	printf("%s\n", dst);
 }
